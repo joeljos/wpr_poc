@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reportissue.css">
+    <title>
+        Report issue with the coffee machine #001
+    </title>
+</head>
+
+<body>
+    <form action="https://joeljos.pythonanywhere.com/wpr_qrcode_app" method="POST" id="reportform">
+        <div>
+            <label>
+                machineid : coffee001
+                <input type="hidden" name="machineid" value="coffee001">
+            </label>
+        </div>
+        <p></p>
+        <div>
+            <label>
+                <h2>Brief description about what is not working :
+                    <input type="text" class="txtbox" name="descr" placeholder="what is not working ?" size="50"
+                        required>
+                </h2>
+            </label>
+        </div>
+        <p></p>
+        <div>
+            <label>
+                <h2> Your ccoid :
+                    <input type="text" class="txtbox" name="ccoid" placeholder="your_ccoid" size="20" required>
+                </h2>
+            </label>
+        </div>
+        <p></p>
+        <div style="text-align:center;">
+            <label>
+                <button type="submit" class="bt-100" form="reportform" value="Submit">Submit</button>
+            </label>
+        </div>
+    </form>
+</body>
+
+</html>
